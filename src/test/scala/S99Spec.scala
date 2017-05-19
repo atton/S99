@@ -39,4 +39,8 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(false === S06.isPalindrome(List(1, 2, 3, 2, 6)))
 
   }
+
+  "S07.flatten" should "return flatten a nested list structure" in {
+    assert( S07.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) === List(1, 1, 2, 3, 5, 8))
+  }
 }
