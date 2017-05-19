@@ -69,4 +69,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
       === List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
   }
 
+  "S13.encodeDirect" should "return Run-length encoding of a list (direct solution)" in {
+    assert(S13.encodeDirect(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+      === List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)))
+  }
+
 }
