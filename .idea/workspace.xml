@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e12c9f-352d-4447-870f-fe595a3b583f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/S01.scala" afterPath="$PROJECT_DIR$/src/main/scala/S01.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/S99Spec.scala" afterPath="$PROJECT_DIR$/src/test/scala/S99Spec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/S02.scala" afterPath="$PROJECT_DIR$/src/main/scala/S02.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="S01.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="S01.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/S01.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="S02.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="S02.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/S02.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="105">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -85,10 +84,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/scala/S01Spec.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/S02.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/S01.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/S03.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/S99Spec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/S02.scala" />
       </list>
     </option>
   </component>
@@ -570,15 +569,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="S99Spec - 2017.05.19 at 12h 22m 23s.xml">
-      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="S99Spec - 2017.05.19 at 12h 23m 19s.xml">
-      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="S99Spec - 2017.05.19 at 12h 26m 04s.xml">
-      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="S99Spec - 2017.05.19 at 12h 26m 45s.xml">
       <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -598,6 +588,15 @@
       <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="S99Spec - 2017.05.19 at 12h 28m 23s.xml">
+      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="S99Spec - 2017.05.19 at 12h 30m 30s.xml">
+      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="S99Spec - 2017.05.19 at 12h 30m 49s.xml">
+      <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="S99Spec - 2017.05.19 at 12h 30m 58s.xml">
       <configuration name="S99Spec" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -623,7 +622,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -669,18 +668,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/S02.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/S01.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/S02.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
