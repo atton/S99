@@ -59,4 +59,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
       ===  List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)))
   }
 
+  "S11.encodeModified" should "return Modified run-length encoding" in {
+    assert(S11.encodeModified(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+      === List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e)))
+  }
+
 }

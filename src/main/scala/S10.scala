@@ -4,7 +4,8 @@
 object S10 {
 
   def _encode(list: List[(Int, Symbol)]): List[(Int, Symbol)] = list match {
-    case ((x, a) :: (y, b) :: xs) => if (a == b) _encode((x+y, a) :: xs) else (x,a) :: _encode((y,b) :: xs)
+    case ((x, a) :: (y, b) :: xs) => if (a == b) _encode((x+y, a) :: xs)
+                                            else (x,a) :: _encode((y,b) :: xs)
     case x => x
   }
 
