@@ -49,8 +49,14 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
       ===  List('a, 'b, 'c, 'a, 'd, 'e))
   }
 
-  "S09.encode" should "return Run-length encoding of a list" in {
-    assert(S09.encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+  "S09.pack" should "pack consecutive duplicates of list elements into sublists" in {
+    assert(S09.pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+      === List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e)))
+  }
+
+  "S10.encode" should "return Run-length encoding of a list" in {
+    assert(S10.encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
       ===  List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)))
   }
+
 }
