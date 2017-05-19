@@ -41,6 +41,11 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
   }
 
   "S07.flatten" should "return flatten a nested list structure" in {
-    assert( S07.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) === List(1, 1, 2, 3, 5, 8))
+    assert(S07.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) === List(1, 1, 2, 3, 5, 8))
+  }
+
+  "S08.compress" should "liminate consecutive duplicates of list elements" in {
+    assert(S08.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+      ===  List('a, 'b, 'c, 'a, 'd, 'e))
   }
 }
