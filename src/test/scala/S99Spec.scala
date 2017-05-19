@@ -74,4 +74,8 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
       === List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)))
   }
 
+  "S14.duplicate" should "duplicate the elements of a list" in {
+    assert(S14.duplicate(List('a, 'b, 'c, 'c, 'd)) === List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd))
+  }
+
 }
