@@ -33,4 +33,10 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(S05.reverse(List(1, 1, 2, 3, 5, 8)) === List(8, 5, 3, 2, 1, 1))
   }
 
+  "S06.isParindrome" should "return whether a list is a palindrome" in {
+    assert(true === S06.isPalindrome(List(1, 2, 3, 2, 1)))
+    assert(true === S06.isPalindrome(List(1, 2, 2, 1)))
+    assert(false === S06.isPalindrome(List(1, 2, 3, 2, 6)))
+
+  }
 }
