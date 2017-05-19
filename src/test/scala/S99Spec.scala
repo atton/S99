@@ -24,4 +24,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     intercept[Exception](S03.nth(1, List(0)))
     intercept[Exception](S03.nth(-1, List(0)))
   }
+
+  "S04.length" should "return number of elements of list" in {
+    assert(6 === S04.length(List(1, 1, 2, 3, 5, 8)))
+  }
+
 }
