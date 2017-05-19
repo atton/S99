@@ -29,4 +29,8 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(6 === S04.length(List(1, 1, 2, 3, 5, 8)))
   }
 
+  "S05.reverse" should "reverse a list" in {
+    assert(S05.reverse(List(1, 1, 2, 3, 5, 8)) === List(8, 5, 3, 2, 1, 1))
+  }
+
 }
