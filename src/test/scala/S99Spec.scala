@@ -86,4 +86,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(S16.drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) === List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k))
   }
 
+  "s17.split" should "split a list into two parts." in {
+    assert(S17.split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) === (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
+
+  }
+
 }
