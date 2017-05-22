@@ -112,4 +112,10 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
 
   }
 
+  "P23.randomSelect" should "extract a given number of randomly selected elements from a list." in {
+    val li = List('a, 'b, 'c, 'd, 'f, 'g, 'h)
+    val res = P23.randomSelect(3, li)
+    assert(res.length === 3)
+    for (r <- res) assert(li.exists(r == _))
+  }
 }
