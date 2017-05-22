@@ -1,7 +1,7 @@
 /**
   * Created by yasutaka_higa on 2017/05/19.
   */
-object S09 {
+object P09 {
 
 
   def _pack(list: List[List[Symbol]]): List[List[Symbol]] = list match {

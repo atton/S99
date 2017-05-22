@@ -1,7 +1,7 @@
 /**
   * Created by yasutaka_higa on 2017/05/22.
   */
-object S17 {
+object P17 {
   def split(i: Int, list: List[Symbol]) = {
     def _split(j: Int, li: List[Symbol], p: (List[Symbol], List[Symbol])): (List[Symbol], List[Symbol]) = li match {
       case (x :: xs) => if (j < i) _split(j+1, xs, ((x :: p._1), p._2))
