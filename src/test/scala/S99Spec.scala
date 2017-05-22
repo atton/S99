@@ -126,6 +126,14 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     val lo = P24.lotto(length, limit)
     assert(lo.length === length)
     for(l <- lo) assert((0 to limit).exists(l == _))
+  }
 
+  "P25.randomPermute" should "generate a random permutation of the elements of a list." in {
+    val li = List('a, 'b, 'c, 'd, 'e, 'f)
+    val res = P25.randomPermute(li)
+
+    assert(res.length == li.length)
+    assert(res.length === res.distinct.length)
+    for (r <- res) assert(li.exists(r == _))
   }
 }
