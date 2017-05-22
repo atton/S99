@@ -82,4 +82,8 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(S15.duplicateN(3, List('a, 'b, 'c, 'c, 'd)) === List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd))
   }
 
+  "s16.drop" should "drop every Nth element from a list." in {
+    assert(S16.drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) === List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k))
+  }
+
 }
