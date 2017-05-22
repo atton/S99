@@ -8,5 +8,4 @@ object P20 {
     case (x :: xs) => removeAt(i-1, xs) match {case (li, s) => ((x :: li), s)}
 
   }
-
 }
