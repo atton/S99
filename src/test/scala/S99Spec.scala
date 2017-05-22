@@ -99,4 +99,8 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(P19.rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) === List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i))
   }
 
+  "P20.removeAt" should "remove the Kth element from a list." in {
+    assert(P20.removeAt(1, List('a, 'b, 'c, 'd)) === (List('a, 'c, 'd),'b))
+  }
+
 }
