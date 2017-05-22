@@ -107,4 +107,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(P21.insertAt('new, 1, List('a, 'b, 'c, 'd)) === List('a, 'new, 'b, 'c, 'd))
   }
 
+  "P22.range" should "create a list containing all integers within a given range." in {
+    assert(P22.range(4, 9) === List(4, 5, 6, 7, 8, 9))
+
+  }
+
 }
