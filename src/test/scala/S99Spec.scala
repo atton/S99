@@ -118,4 +118,14 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(res.length === 3)
     for (r <- res) assert(li.exists(r == _))
   }
+
+  "P24.lotto" should "draw N different random numbers from the set 1..M." in {
+    val limit  = 49
+    val length = 6
+
+    val lo = P24.lotto(length, limit)
+    assert(lo.length === length)
+    for(l <- lo) assert((0 to limit).exists(l == _))
+
+  }
 }
