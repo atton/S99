@@ -136,4 +136,9 @@ class S99Spec extends FlatSpec with DiagrammedAssertions with MockitoSugar {
     assert(res.length === res.distinct.length)
     for (r <- res) assert(li.exists(r == _))
   }
+
+  "P26.combinations" should "generate the combinations of K distinct objects chosen from the N elements of a list." in {
+    assert(P26.combinations(3, List('a, 'b, 'c, 'd, 'e, 'f)).distinct.length === 20)
+    assert(P26.combinations(3, (1 to 12).toList).distinct.length === 220)
+  }
 }
